@@ -1,0 +1,48 @@
+  * OUTPUT METHOD *
+   1> console.log(): This is the most common method for debugging and displaying information in the browser's developer console.
+    It is useful for checking variable values, tracking code execution, and observing program flow during development.
+    EX,
+    console.log("Hello, Console!");
+    let data = { name: "Alice", age: 30 };
+    console.log("User data:", data);
+
+    2> document.write(): This method writes content directly into the HTML document. 
+    While functional, using it after the page has fully loaded can overwrite the entire document content, making it less suitable for dynamic updates.
+    EX,
+    document.write("<h1>Welcome to my page!</h1>");
+
+    3> alert(): This method displays a modal alert dialog box with a specified message and an "OK" button.
+     It is primarily used for providing user notifications or simple messages that require immediate attention.
+     EX,
+     alert("This is an important message!");
+
+     * INPUT METHOD *
+     1> prompt(): This method displays a modal dialog box that prompts the user for input and returns the entered value as a string.
+      It includes an input field and "OK" and "Cancel" buttons.
+
+      2> HTML Form Elements: User input is most commonly obtained through HTML form elements like <input>, <textarea>, and <select>.
+       JavaScript interacts with these elements by accessing their value property or listening for events like change or submit.
+
+       3> confirm(): confirming user input typically refers to using the confirm() method, which displays a dialog box with a message and two buttons: "OK" and "Cancel." 
+       This method is commonly used to ask for user confirmation before proceeding with an action.
+       syntax:let isConfirmed = confirm(message);
+
+        * Parameters:
+    1> message: An optional string that will be displayed in the confirmation dialog box.
+
+   * Return Value:
+  1> true: If the user clicks the "OK" button.
+  2> false: If the user clicks the "Cancel" button.
+ EX,
+  let userDecision = confirm("Are you sure you want to delete this item?");
+
+if (userDecision) {
+  // User clicked OK, proceed with deletion
+  console.log("Item deleted successfully.");
+} else {
+  // User clicked Cancel, do not delete
+  console.log("Deletion canceled.");
+}
+
+
+

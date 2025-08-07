@@ -1,9 +1,10 @@
-card-container {
-    display: flex; /* Arranges cards horizontally */
-    flex-wrap: wrap; /* Allows cards to wrap to the next line on smaller screens */
-    justify-content: center; /* Centers the cards horizontally */
-    gap: 20px; /* Adds space between cards */
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
     padding: 20px;
+    flex-direction: row;
+
 }
 
 .card {
@@ -13,6 +14,7 @@ card-container {
     width: 300px; /* Fixed width for each card */
     overflow: hidden; /* Hides content that overflows the card boundaries */
     transition: transform 0.3s ease-in-out; /* Smooth transition for hover effect */
+    
 }
 .card img {
     width: 100%; /* Makes the image fill the width of the card */
@@ -51,15 +53,15 @@ card-container {
     background-color: #0056b3; /* Darker blue on hover */
 }
 
-/* Responsive adjustments using Media Queries */
+/* Responsive adjustments using Media Queries
 @media (max-width: 768px) {
     .card {
         width: calc(50% - 20px); /* Two cards per row on medium screens, with spacing */
     }
 }
 
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
     .card {
         width: 90%; /* Single card per row on small screens */
     }
-}
+} */ */
