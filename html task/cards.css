@@ -1,0 +1,65 @@
+card-container {
+    display: flex; /* Arranges cards horizontally */
+    flex-wrap: wrap; /* Allows cards to wrap to the next line on smaller screens */
+    justify-content: center; /* Centers the cards horizontally */
+    gap: 20px; /* Adds space between cards */
+    padding: 20px;
+}
+
+.card {
+     background-color: #fff; /* White background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 300px; /* Fixed width for each card */
+    overflow: hidden; /* Hides content that overflows the card boundaries */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+.card img {
+    width: 100%; /* Makes the image fill the width of the card */
+    height: 200px; /* Fixed height for images */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+.card-content {
+    padding: 20px;
+    text-align: center; /* Centers the text within the content area */
+}
+
+.card-content h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #333; /* Dark gray for title */
+}
+
+.card-content p {
+    font-size: 0.9em; /* Slightly smaller font size for description */
+    color: #666; /* Gray for text */
+    line-height: 1.5;
+}
+
+.card-button {
+    display: inline-block; /* Makes the button display as a block element */
+    background-color: #007bff; /* Blue background for button */
+    color: #fff; /* White text for button */
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none; /* Removes the underline from the link */
+    margin-top: 15px;
+}
+
+.card-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Responsive adjustments using Media Queries */
+@media (max-width: 768px) {
+    .card {
+        width: calc(50% - 20px); /* Two cards per row on medium screens, with spacing */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 90%; /* Single card per row on small screens */
+    }
+}

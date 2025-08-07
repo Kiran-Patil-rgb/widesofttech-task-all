@@ -1,0 +1,46 @@
+defination:
+: JavaScript  is a high-level, dynamic, and versatile programming language that conforms to the ECMAScript standard. It is primarily known as the scripting language for web pages, enabling dynamic and interactive content on websites. 
+* JavaScript supports Object-Oriented Programming (OOP) principles, although its implementation differs from classical, class-based languages like Java or C++. JavaScript utilizes a prototype-based inheritance model, but also provides a class syntax (introduced in ES6) that offers a more familiar way to structure OOP code.
+* JavaScript is capable of running in both client-side and server-side environments.
+* clent-side and server side
+* client-side : Client-side JavaScript is primarily used for enhancing user experience and creating interactive web interfaces, including:
+* server-side : Server-side JavaScript is used for tasks traditionally handled by other server-side languages (like Python, PHP, Ruby), including:
+* Building web servers and APIs.
+* Interacting with databases.
+
+history of JavaScript
+* JavaScript was created in 1995 by Brendan Eich, then working at Netscape Communications Corporation.
+ Initially named Mocha, 
+ then LiveScript, it was eventually renamed JavaScript to capitalize on the popularity of the Java programming language.
+  It was developed to add interactivity and dynamic content to web pages within the Netscape Navigator browser, complementing HTML and CSS.
+
+* Today, JavaScript is a ubiquitous language, extending beyond client-side web development to server-side applications with Node.js, mobile app development with frameworks like React Native, and desktop applications.
+ Its evolution has been driven by a collaborative effort involving various organizations and developers
+ , making it a cornerstone of modern web development.
+
+ current version of JavaScript
+ * The current official version of JavaScript released in 2022 is ECMAScript 2022 (ES2022), also known as ES13.
+ * This version was published in June 2022 and introduced several new features and improvements to the language, including:
+ * Class Field Declarations: Allowing direct initialization of property default values within a class.
+ * Private Methods and Fields: Enabling the creation of truly private members within a class using the # symbol.
+ * Top-level await: Permitting the use of the await keyword outside of async functions in modules.
+ * Static class fields and methods: Providing a way to define static members that belong to the class itself rather than instances.
+ * Class static Block: Allowing the execution of statements during class initialization.
+ * Exist Checks for Private Fields: Enabling the checking of private field existence using the in operator.
+ * at() Method for Indexing: A new method for arrays and strings to access elements by index, supporting negative indices.
+ * Object.hasOwn() Method: A safer way to check for own properties of an object compared to hasOwnProperty.
+ * Error Cause: Allowing the specification of a cause property for Error objects to indicate the original error.
+
+ static type language and dynamic type language
+ 1> static typed language: Static typing is a typing system where variables are bound to a data type during compilation. Once a variable is assigned a data type it remains unchanged throughout the programs execution. This binding promotes type safety and detects errors at an early stage.
+ ex. ctt, java, rust
+ 2> dynamic typed language: dynamic typing allows variables to be bound to data types at runtime instead of during compilation. This flexibility enables concise code and ease of use. It compromises on type safety as a trade-off.
+ ex,python, JavaScript,ruby
+ 
+ * JavaScript environments
+ there are two primary types of javascript environments:
+ 1> browser environment:
+ This is where JavaScript runs within a web browser, enabling interactive and dynamic web pages.
+ 2>Node.js Environment:
+This allows JavaScript to run on a server or as a standalone application outside of a web browser, 
+used for building back-end services, command-line tools, and more.

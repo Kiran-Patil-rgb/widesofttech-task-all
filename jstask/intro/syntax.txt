@@ -1,0 +1,64 @@
+In JavaScript, variables are containers used to store data, and data types define the kind of values a variable can hold.
+ JavaScript is a dynamically-typed language, meaning you don't explicitly declare the data type when defining a variable;
+  the type is determined at runtime based on the value assigned.
+
+  scope variable_name assigment oprator(=) data/value(data type);
+
+ scope (var public scope,[let, const]protected scope)
+ 
+  * variables: variables rae declared using one of three keywords:
+ 1> var: The oldest way to declare variables. var has function scope, meaning it's accessible within the function where it's declared.
+   If declared outside any function, it has global scope.
+   
+   ex, var name = "alice";
+   2>let: Introduced in ES6, let provides block-scoped variables.
+    This means a let variable is only accessible within the block (e.g., if statement, for loop) where it's defined.
+     let variables can be reassigned.
+     ex, let age=20;
+     age= age + 1;
+
+     3>const: Also introduced in ES6, const declares block-scoped constants.
+      Once a const variable is assigned a value, it cannot be reassigned.
+      ex, const PI = 3.14159;
+      * we cannot redeclration of any variable within the same scope
+      let const student {
+            name: kiran;
+            id: 201;
+            subject:english;
+      }
+      student.subject = math;
+    *a variable has 2 parts declrations and initilization
+
+scope name - declrations
+= value/data; -initialization
+
+* data types:JavaScript is a dynamically-typed language, meaning you do not explicitly declare the data type of a variable;
+ the type is determined at runtime based on the value assigned.
+ 
+ * JavaScript has both primitive and non-primitive data types.
+ Primitive Data Types:
+ These represent single, immutable values.
+ *string: Represents textual data (e.g., "hello").
+ *number: Represents both integers and floating-point numbers (e.g., 10, 3.14).
+ *boolean: Represents a logical entity and can only have two values: true or false.
+ *undefined: Indicates that a variable has been declared but has not yet been assigned a value.
+ *null: Represents the intentional absence of any object value. It is a primitive value.
+ *symbol: Introduced in ES6, Symbol values are unique and immutable and are typically used as object property keys.
+
+ Non-Primitive Data Types:
+These represent more complex data structures and are mutable.
+ *object: A collection of key-value pairs. This is the base type for many other complex data structures. 
+ *array: An ordered collection of values, technically a type of object (e.g., [1, 2, 3]).
+ *function: A block of code designed to perform a particular task.
+  Functions are also a type of object in JavaScript.
+
+  *rules for declareing variables:
+  1>allowed charactesrs:Variable names must begin with a letter (a-z, A-Z), an underscore (_), or a dollar sign ($).
+   Subsequent characters can also include numbers (0-9).
+  2>case-sensitivity:JavaScript variable names are case-sensitive.
+   myVariable and MyVariable are treated as distinct variables.
+   3> Reserved Keywords:You cannot use JavaScript reserved keywords (e.g., function, class, if, const, let, var, return) as variable names.
+   4>no sapce: variable  names cannot contain spaces.
+
+
+
