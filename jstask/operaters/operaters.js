@@ -1,5 +1,6 @@
 //arithmetics operaters//
 console.log("using arithmetics operaters")
+    
 let num1 = 26
 let num2 = 34
 let sum = num1 + num2
