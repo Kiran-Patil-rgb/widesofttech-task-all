@@ -1,0 +1,35 @@
+*TYPECASTING*
+Typecasting in JavaScript, more commonly referred to as type conversion or type coercion, is the process of transforming a value from one data type to another.
+ This can occur either implicitly (automatically by the JavaScript engine) or explicitly (manually by the developer). 
+
+  1> IMPLICIT TYPE CONVERSION:
+  This occurs automatically when JavaScript performs an operation that requires a specific data type, and the provided value is of a different type.
+   The engine attempts to convert the value to the expected type.
+
+   Examples:
+ 1> Arithmetic operations with different types: ` "5" + 2 ` results in "52" (number converted to string for concatenation).
+ 2> Boolean contexts: ` if ("hello") ` evaluates to true because non-empty strings are implicitly converted to true in a boolean context.
+
+ 2> Explicit Type Conversion (Casting):
+This involves deliberately converting a value using built-in functions or operators. This provides more control over the conversion process.
+ * Common methods for explicit conversion:
+ 1> To Number:
+ * Number(value): Converts value to a number. Returns NaN if the conversion is not possible.
+ * parseInt(string, radix): Parses a string and returns an integer.
+ * parseFloat(string): Parses a string and returns a floating-point number.
+ * Unary plus operator: +value attempts to convert value to a number.
+
+ 2>  To String:
+ * String(value): Converts value to a string.
+ * value.toString(): Method available on most data types to convert them to their string representation.
+
+ 3>  To Boolean:
+ 1> Boolean(value): Converts value to a boolean. Falsy values (e.g., 0, "", null, undefined, NaN) become false, while all other values become true.
+
+ *  Key differences: 
+ 1> Clarity:
+ Explicit statements are clear and direct, while implicit statements require interpretation. 
+ 2> Directness:
+ Explicit communication is straightforward, whereas implicit communication relies on context and inference. 
+ 3> Consciousness:
+ Explicit information is consciously understood, while implicit information may be subconscious. 
