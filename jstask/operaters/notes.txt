@@ -46,6 +46,34 @@ A shorthand for an if-else statement.
  1> typeof (Returns the data type of an operand as a string)
  2> instanceof (Checks if an object is an instance of a particular class or constructor)
 
+  * Increment Operator (++)
+Purpose: Increases the value of a variable by 1.
+ 1> Prefix form (++variable): The variable is incremented first, and then its new value is returned.
+  ex,
+  let x = 5;
+    let y = ++x; // x becomes 6, y is 6
+    console.log(`x: ${x}, y: ${y}`); // Output: x: 6, y: 6
+
+   2> Postfix form (variable++): The current value of the variable is returned first, and then the variable is incremented.
+  ex,
+    let a = 5;
+    let b = a++; // a is still 5 when assigned to b, then a becomes 6
+    console.log(`a: ${a}, b: ${b}`); // Output: a: 6, b: 5
+
+   * Decrement Operator (--)
+Purpose: Decreases the value of a variable by 1.
+ 1> Prefix form (--variable): The variable is decremented first, and then its new value is returned.
+  ex,
+  let p = 10;
+    let q = --p; // p becomes 9, q is 9
+    console.log(`p: ${p}, q: ${q}`); // Output: p: 9, q: 9
+
+    2> Postfix form (variable--): The current value of the variable is returned first, and then the variable is decremented.
+    ex,
+    let r = 10;
+    let s = r--; // r is still 10 when assigned to s, then r becomes 9
+    console.log(`r: ${r}, s: ${s}`); // Output: r: 9, s: 10
+    
     * DIFFRENCE BETWEEN STATEMENT AND EXPRESSION *
 
     STATEMENT: A statement is a command or instruction that performs an action.

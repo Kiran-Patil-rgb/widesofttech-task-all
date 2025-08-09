@@ -32,4 +32,5 @@ This involves deliberately converting a value using built-in functions or operat
  2> Directness:
  Explicit communication is straightforward, whereas implicit communication relies on context and inference. 
  3> Consciousness:
+ 
  Explicit information is consciously understood, while implicit information may be subconscious. 
