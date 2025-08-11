@@ -1,0 +1,36 @@
+ * loops *
+ loops in javascript control structures taht enable the repeated execution
+ of a blck of code as long as a specified condition remains true.they are
+ fundamental for automatinig repetitive tasks and iterating over collections of
+ data.
+  * types of loops *
+
+   1> for loop: this loop is used when the number of iteration is known or can be determined
+    beforehand.its synatax includes an intializaation expression,a condition,and an
+    update expression, all executed in a specific order during each iteration.
+    ex,
+    for (let i=0; i< 5; i++){
+        console.log("iteration:" + i);
+    }  
+
+    2>while loop: the while loop repeatedly executes a block of code as long as a specified
+    condition evaluates to true.the condition is checked before each iteration.
+    ex,
+    let count = 0;
+    while(count < 3){
+        console.log(count)
+        count++;
+    }
+
+    3> d0..while loop:similar to the while loop,but the code block is executed at
+    least once before the condition is evaluated.subsequent depend on the condition
+    remaining true.
+    ex,
+    let num = 0;
+    do{
+        console.log(num);
+        num++;
+    } while (num < 0);
+
+
+
