@@ -12,3 +12,5 @@ if(num2 % 2 === 0){
 }else {
     console.log("number is not odd");
 }
+
+
