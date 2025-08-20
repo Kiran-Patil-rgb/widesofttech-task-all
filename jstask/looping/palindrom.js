@@ -27,3 +27,4 @@ let originalNum = num;
     task = window.confirm("Do you wish to continue (yes/no)?");
 
 } while (task); 
+
