@@ -1,0 +1,37 @@
+     *objects*
+ * defination: in javascript, objects are fundamental data structure used to stror collection of related data and functionality,
+ they are non-primitive data type, meaning they are refernce values rather than primitives values like numbers,string, or bolleans.
+
+  * key characteristics of objects:
+  1> key-value pairs : objects store data in the form of key-value pairs, often referred to as properties.each property has a unique "key" 
+   that identifies it, and an associated "value" which can be any javascript data type, including other objects,
+   arrays,function, or primitives values.
+
+  2> methods: when a property's value is a function, it is known as a methodMethods represent actions or behaviors that the object can perform. 
+  
+  3> dynamic nature: objects are dynamic, allowing properties to be added,modifiied,or deleted at runtime.
+
+ * creation:
+  objects can be created using:
+  1> object literals: the most commmon and concise way,using curly braces {} to define properties directly.
+  2> object constructors: using the new object() constructor or custom constructor functions.
+
+  * accessing properties:
+  properties are accessed using:
+  1> dot notation: objectname.propertyname(prefferd for simple property names).
+  2> bracket notation: objectname['propertyname'](useful for property names with special characters or when the property name is stored in variable).
+
+  syntax:
+  let object = {
+    key : value,
+    key1 : value1,
+    key2 : value2,
+    key3 : value3,
+    .
+    .
+    .
+    keyFunction: ()=>{console.log()}
+}
+
+object.key
+object.keyFunction()
