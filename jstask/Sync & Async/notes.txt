@@ -1,0 +1,26 @@
+ //defination//
+  In javascript,the concepts of synchoronous and asynchronous execution describe how tasks are handled and when the program proceeds to the next operation.
+
+ //synchoronous//
+ 1> blocking execution:
+ synchoronous code executes sequentially,line by line, from top to bottom.each operation must complete before the next one can begin.
+ 2> call stack:
+ the javascript engine uses a "call stack" to manage synchoronous function calls. when a function is called, it's pushed onto the stack,and when it finishes,
+ it's popped off.
+ 3> potential for blocking:
+ if a synchoronous operation is time-consuming,it will block the main thread,making the application unresponsive until the operation finishes.
+
+ //Asynchronous//
+ 1> Non-Blocking Execution:
+ Asynchronous code allows certain operations to run independently in the background without blocking the main thread. 
+ This means other tasks can continue executing while waiting for the asynchronous operation to complete.
+ 2> Event Loop and Callback Queue:
+ JavaScript achieves asynchronicity through mechanisms like the event loop and callback queue. When an asynchronous operation (like setTimeout, fetch API calls, or user events) is initiated, it's handled outside the main call stack. Once the operation completes, 
+ its associated callback function is placed in the callback queue, and the event loop pushes it to the call stack when the stack is empty.
+ 3> Improved Responsiveness:
+ Asynchronous programming is crucial for building responsive web applications, as it prevents long-running tasks from freezing the user interface.
+ 4> Patterns:
+ Common patterns for handling asynchronous operations include:
+ 1> Callbacks: Functions passed as arguments to be executed when an asynchronous task completes.
+ 2> Promises: Objects representing the eventual completion or failure of an asynchronous operation, providing a more structured way to handle asynchronous code.
+ 3> async/await: Syntax built on Promises that allows writing asynchronous code in a more synchronous-like, readable manner.
