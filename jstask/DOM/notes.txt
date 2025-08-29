@@ -1,0 +1,22 @@
+DOM : DOM stands for document object model
+//defination//
+ The DOM is a programming interface for web documents. It represents the structure of a web page (typically HTML or XML) as a tree of objects,
+ where each object corresponds to a part of the document, such as an element, attribute, text, or comment. 
+
+//Key aspects of the DOM in JavaScript//
+ Tree-like Structure:
+ The DOM organizes the document into a hierarchical tree, with the document object at the root. Each element within the HTML becomes a node in this tree.
+
+  Object Representation:
+ Each part of the document (e.g., <p>, <div>, <img>) is represented as a JavaScript object. These objects have properties and methods that allow you to interact with them.
+
+ Dynamic Manipulation:
+ JavaScript can access and modify the DOM, allowing for dynamic changes to the content, structure, and style of a web page after it has loaded. This includes:
+ 1> Selecting elements (e.g., getElementById, querySelector).
+ 2> Changing element content (e.g., textContent, innerHTML).
+ 3> Adding or removing elements (e.g., appendChild, removeChild).
+ 4> Modifying attributes and styles.
+ 5> Attaching event handlers to elements to respond to user interactions (e.g., clicks, key presses).
+
+ In essence, the DOM acts as a bridge between the static HTML/XML document and the dynamic capabilities of JavaScript, enabling interactive and responsive web experiences.
+
