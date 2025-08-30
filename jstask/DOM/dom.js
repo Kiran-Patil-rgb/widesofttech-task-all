@@ -37,6 +37,7 @@ togglebutton1.addEventListener("click",()=>{
 //         bluebox.style.display = "none";
 //     }
 // });
+
 //table//
 const button = document.getElementById("btn3");
 const tableBody = document.querySelector("#table1 tbody");
@@ -45,18 +46,22 @@ const tabledata = [
     {
         name: "kiran",
         id: 2001,
+        subject:"english",
     },
     {
         name: "pranay",
         id : 2002,
+        subject : "marathi",
     },
     {
         name: "sejal",
         id: 2003,
+        subject : "maths",
     },
     {
         name: "aryan",
         id: 2004,
+        subject : "science",
     }
 ];
 
@@ -76,6 +81,7 @@ button.addEventListener("click", () => {
         <tr>
             <td>${rowData.name}</td>
             <td>${rowData.id}</td>
+            <td>${rowData.subject}</td>
         </tr>
     `;
     rowIndex++;
