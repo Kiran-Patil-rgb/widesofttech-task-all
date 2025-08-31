@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form events</title>
+   <style>
+        .red {
+            color: red;
+        }
+
+        #target {
+            width: 400px;
+            height: 400px;
+            border: 3px solid black;
+        }
+    </style>
+
+</head>
+<body>
+
+     <form id="myForm">
+    <label for="name">name</label><br>
+    <input type="text" id="name" name="name"><br><br>
+    <button type="submit">submit</button>
+  </form>
+   
+  <h2>choose your favouite fruit</h2>
+    <select id="fruitSelect">
+        <option value="">choose</option>
+        <option value="apple">apple</option>
+        <option value="banana">banana</option>
+        <option value="orange">orange</option>
+         <option value="orange">graphes</option>
+          <option value="orange">mango</option>
+           <option value="orange">kiwi</option>
+            <option value="orange">guava</option>
+    </select>
+
+    <p id="result"></p>
+
+<div id="target"></div>
+           <input value="0" id="ir1" type="range" min="0" max="255" name="red" steps="255" id="">
+    <label for="">Red</label>
+    <input value="0" id="ir2" type="range" min="0" max="255" name="green" id="" steps="255">
+    <label for="">Green</label>
+    <input value="0" id="ir3" type="range" min="0" max="255" name="blue" id="" steps="255">
+    <label for="">Blue</label>
+</body>
+<script src="./formevent.js"></script>
+</html>
