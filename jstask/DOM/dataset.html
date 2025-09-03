@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dataset</title>
+    <style>
+        .first{
+            width:300px;
+            height :0px;
+            background-color:black;
+            visibility:hidden;
+            transition:visibility 0s 2s, opacity 2s ease, height 2s ease;
+            opacity: 0;
+            overflow:hidden;
+        }
+        .second{
+            width:200px;
+            height:200px;
+            background-color: blue;
+            display:none;
+        }
+        
+        .colorContainer3{
+            background-color: burlywood;
+        }
+        .show{
+            visibility:visible;
+            height: 300px;
+            display: block;
+            transition: visibility 0s 0s, opacity 2s ease, height 2s ease;
+            opacity: 1;
+        }
+        .first *{
+            visibility: inherit;
+            transition: all 2s ease;
+        }
+        #text{
+            color:white;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="btn1" data-target-element="#container1" data-toggle-class="show" onclick="toggleClass(event)">click here</button>
+
+    <div class="first" id="container1" data-add="show">
+        <h1 id="text">Hello everyone</h1>
+          <img src="hello.png" alt="image">
+    </div>
+    <button data-target-element="#container2" data-toggle-class="show" onclick="toggleClass(event)">click here 1</button>
+
+    <div id="container2" class="second">
+        <h1>this is some second container</h1>
+    </div>
+
+    
+    </div>
+</body>
+<script src="./dataset.js"></script>
+</html>

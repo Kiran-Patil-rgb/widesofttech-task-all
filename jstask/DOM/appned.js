@@ -12,6 +12,7 @@ function createList() {
             
             listItem1.style.color = "red";
             
+            
             list.appendChild(listItem1);
             list.appendChild(listItem2);
             list.appendChild(listItem3);
