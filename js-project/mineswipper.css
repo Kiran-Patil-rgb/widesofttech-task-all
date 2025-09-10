@@ -1,0 +1,46 @@
+/*styling for grid*/
+.grid{
+            /* width:100%; */
+            display:grid;
+            grid-template-columns: repeat(10,60px);
+            padding:60px 40px;
+            margin:0 auto;
+        }
+/*styling for each individual box*/
+.box{
+    width:60px;
+    height:60px;
+    background-color: gray;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size:2.2rem;
+}
+/*styling for the #game ID*/
+#game{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+/*styling for the #bomb ID*/
+#bomb{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.2rem;
+    opacity:1 ;   
+}
+/* Animation for the span inside a bomb-explodes box */
+.box.bomb-explodes span{
+    animation:explode 0.8s linear;
+}
+/* Defines the keyframes for the 'explode' animation */
+@keyframes explode{
+    0%{
+        transfrom: scale(1);
+        opacity: 1;
+    }
+    100%{
+        transfrom:scale(10);
+        opacity: 0;
+    }
+}
