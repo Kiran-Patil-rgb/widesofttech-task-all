@@ -1,46 +1,82 @@
-/*styling for grid*/
-.grid{
-            /* width:100%; */
-            display:grid;
-            grid-template-columns: repeat(10,60px);
-            padding:60px 40px;
-            margin:0 auto;
-        }
-/*styling for each individual box*/
-.box{
-    width:60px;
-    height:60px;
+.grid {
+    display: grid;
+    grid-template-columns: repeat(10, 40px);
+    padding: 60px 40px;
+    margin: 0 auto;
+}
+/* हर एक बॉक्स के लिए स्टाइलिंग */
+.box {
+    width: 40px;
+    height: 40px;
     background-color: gray;
     border: 2px solid black;
     border-radius: 5px;
-    font-size:2.2rem;
-}
-/*styling for the #game ID*/
-#game{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-}
-/*styling for the #bomb ID*/
-#bomb{
+    font-size: 1.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2.2rem;
-    opacity:1 ;   
 }
-/* Animation for the span inside a bomb-explodes box */
-.box.bomb-explodes span{
-    animation:explode 0.8s linear;
+/* #game ID के लिए स्टाइलिंग */
+#game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
 }
-/* Defines the keyframes for the 'explode' animation */
-@keyframes explode{
-    0%{
-        transfrom: scale(1);
-        opacity: 1;
-    }
-    100%{
-        transfrom:scale(10);
-        opacity: 0;
-    }
+/* माइन पर होवर के लिए हिंट */
+.box.hint {
+    border: 3px solid #ff0000;
+    box-shadow: 0 0 5px #ff0000;
+}
+/* बम पर क्लिक करने पर पॉप एनिमेशन */
+@keyframes bomb-pop {
+    0% { transform: scale(0); opacity: 0; }
+    50% { transform: scale(1.5); opacity: 1; }
+    100% { transform: scale(1); opacity: 1; }
+}
+.box.bomb-revealed span {
+    animation: bomb-pop 0.3s ease-out forwards;
+}
+/* बम फटने पर एनिमेशन */
+@keyframes explode {
+    0% { transform: scale(1); opacity: 1; }
+    100% { transform: scale(10); opacity: 0; }
+}
+.box.bomb-explodes span {
+    animation: explode 0.8s linear forwards;
+}
+/* रीस्टार्ट बटन के लिए स्टाइलिंग */
+#restart-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+    z-index: 10;
+}
+#restart-button:hover {
+    background-color: #0056b3;
+}
+/* स्कोरबोर्ड के लिए स्टाइलिंग */
+#scoreboard {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+/* फ्लैग और अन्य स्पैन के लिए स्टाइलिंग */
+.box span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
 }
