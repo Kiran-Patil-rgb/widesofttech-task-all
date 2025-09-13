@@ -164,6 +164,12 @@ document.addEventListener('DOMContentLoaded', () => {
         if (clickedCells === nonMineCells) {
             isGameOver = true;
             alert('Congratulations, you have won!');
+             document.body.classList.add('win-background');
+              party.confetti(document.body, {
+            count: party.variation.range(100, 200) 
+        });
+
+
             if (restartButton) {
                 restartButton.style.display = 'block';
             }
@@ -200,4 +206,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
    // Starts the game for the first time//
     startGame();
+    document.body.classList.remove('win-background');
 });

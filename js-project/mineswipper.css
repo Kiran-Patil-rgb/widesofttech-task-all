@@ -1,10 +1,18 @@
+body {
+   /* Other body styles */
+    transition: background-color 1s ease-in-out;
+}
+
+body.win-background {
+    background-color: #a3d900; /* Green color on winning */
+}
 .grid {
     display: grid;
     grid-template-columns: repeat(10, 40px);
     padding: 60px 40px;
     margin: 0 auto;
 }
-/* हर एक बॉक्स के लिए स्टाइलिंग */
+/* Styling for each box */
 .box {
     width: 40px;
     height: 40px;
@@ -16,7 +24,7 @@
     justify-content: center;
     align-items: center;
 }
-/* #game ID के लिए स्टाइलिंग */
+/* Styling for the #game ID */
 #game {
     display: flex;
     justify-content: center;
@@ -24,12 +32,12 @@
     flex-direction: column;
     position: relative;
 }
-/* माइन पर होवर के लिए हिंट */
+/* Hint for hovering over a mine */
 .box.hint {
     border: 3px solid #ff0000;
     box-shadow: 0 0 5px #ff0000;
 }
-/* बम पर क्लिक करने पर पॉप एनिमेशन */
+/* Pop animation on clicking a bomb */
 @keyframes bomb-pop {
     0% { transform: scale(0); opacity: 0; }
     50% { transform: scale(1.5); opacity: 1; }
@@ -38,7 +46,7 @@
 .box.bomb-revealed span {
     animation: bomb-pop 0.3s ease-out forwards;
 }
-/* बम फटने पर एनिमेशन */
+/* Animation when a bomb explodes */
 @keyframes explode {
     0% { transform: scale(1); opacity: 1; }
     100% { transform: scale(10); opacity: 0; }
@@ -46,7 +54,7 @@
 .box.bomb-explodes span {
     animation: explode 0.8s linear forwards;
 }
-/* रीस्टार्ट बटन के लिए स्टाइलिंग */
+/* Styling for the restart button */
 #restart-button {
     position: absolute;
     top: 50%;
@@ -65,14 +73,14 @@
 #restart-button:hover {
     background-color: #0056b3;
 }
-/* स्कोरबोर्ड के लिए स्टाइलिंग */
+/* Styling for the scoreboard */
 #scoreboard {
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 10px;
     color: #333;
 }
-/* फ्लैग और अन्य स्पैन के लिए स्टाइलिंग */
+/* Styling for flags and other spans */
 .box span {
     display: flex;
     justify-content: center;
@@ -80,3 +88,4 @@
     height: 100%;
     width: 100%;
 }
+    
