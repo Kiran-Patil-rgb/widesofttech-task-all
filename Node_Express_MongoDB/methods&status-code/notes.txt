@@ -1,0 +1,30 @@
+*DEFINATION*
+HTTP methods, also known as HTTP verbs, define the type of action a client wants to perform on a resource identified by a URL. HTTP status codes are three-digit numbers returned by a server in response to a client's HTTP request, indicating the outcome of that request.
+
+* Common HTTP Methods:
+1> GET: Retrieves data from a specified resource. It should only retrieve data and have no other effect.
+2> POST: Submits data to a specified resource, often causing a change in state or side effects on the server.
+3> PUT: Replaces all current representations of the target resource with the request payload.
+4> DELETE: Deletes the specified resource.
+5> PATCH: Applies partial modifications to a resource.
+6> HEAD: Requests the headers that would be returned if the HEAD request's URL was instead requested with a GET method. The response body is omitted.
+7> OPTIONS: Describes the communication options for the target resource.
+
+* HTTP Status Codes Categories:
+1> HTTP status codes are grouped into five categories based on their first digit:
+2> 1xx Informational: The request was received, continuing process. (e.g., 100 Continue, 101 Switching Protocols)
+3> 2xx Success: The request was successfully received, understood, and accepted. (e.g., 200 OK, 201 Created, 204 No Content)
+4> 3xx Redirection: Further action needs to be taken by the user agent to fulfill the request. (e.g., 301 Moved Permanently, 302 Found, 304 Not Modified)
+5> 4xx Client Error: The request contains bad syntax or cannot be fulfilled. (e.g., 400 Bad Request, 401 Unauthorized, 403 Forbidden, 404 Not Found) 
+6> 5xx Server Error: The server failed to fulfill an apparently valid request. (e.g., 500 Internal Server Error, 502 Bad Gateway, 503 Service Unavailable)
+
+* Examples of Common Status Codes:
+1> 200 OK: The request succeeded.
+2> 201 Created: The request succeeded, and a new resource was created.
+3> 301 Moved Permanently: The requested resource has been permanently moved to a new URL.
+4> 400 Bad Request: The server cannot process the request due to a client error (e.g., malformed syntax). 
+5> 401 Unauthorized: The client must authenticate itself to get the requested response. 
+6> 403 Forbidden: The client does not have access rights to the content.
+7> 404 Not Found: The server cannot find the requested resource.
+8> 500 Internal Server Error: The server encountered an unexpected condition that prevented it from fulfilling the request.
+9> 503 Service Unavailable: The server is not ready to handle the request, often due to maintenance or overload.
